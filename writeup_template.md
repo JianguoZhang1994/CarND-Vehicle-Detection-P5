@@ -69,6 +69,8 @@ I tried various combinations of parameters. The parameters I use shows as follow
 | 700, 450     | 960, 0      |
 | 585, 450      | 300, 0        |
 
+
+|:-------------:|:-------------:| 
  | feature vector length X_train:  6156 | Scaled_X_train:  6156 |
  | Color Space:  YCrCb | orient:  9 |
  | pixels per cell:  8 | cells per block:  2 |
