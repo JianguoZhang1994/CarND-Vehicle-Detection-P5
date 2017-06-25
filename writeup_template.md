@@ -64,12 +64,8 @@ I tried various combinations of parameters. The parameters I use shows as follow
 
 
 
-| 200, img_size[1]      | 300, img_size[1]        | 
-| 1200, img_size[1]      | 960, img_size[1]      |
-| 700, 450     | 960, 0      |
-| 585, 450      | 300, 0        |
 
-
+| Source        | Destination   | 
 |:-------------:|:-------------:| 
  | feature vector length X_train:  6156 | Scaled_X_train:  6156 |
  | Color Space:  YCrCb | orient:  9 |
