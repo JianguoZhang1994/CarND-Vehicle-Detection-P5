@@ -41,6 +41,10 @@ The goals / steps of this project are the following:
 
 You're reading it! The program codes can be found in [vehicle_detection.ipynb](./vehicle_detection.ipynb) or [vehicle_detection.html](./vehicle_detection.html)
 
+Here's a [link to my video result](./project_video_result.mp4)
+
+I also try to combine vehicle detection and lane detection, here's a [link to my vehicle_lane_line detection video](./project_demo_with_lines.mp4). Currently the combined method is too naive, I will improve it in future. 
+
 ### Histogram of Oriented Gradients (HOG)
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
