@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [image5]: ./output_images/heat_map_no_thresh_test5.jpg
 [image5_1]: ./output_images/heat_map_with_thresh_test5.jpg
 [image5_2]: ./output_images/heat_map_with_thresh_examples.jpg
-[image6]: ./examples/labels_map.png
+[image6]: ./output_images/final_combined_example_test6.jpg
 [image7]: ./examples/output_bboxes.png
 [video1]: ./project_video.mp4
 
@@ -136,6 +136,9 @@ Here's a [link to my video result](./project_video_result.mp4)
 
 I also try to combine vehicle detection and lane detection, here's a [link to my vehicle_lane_line detection](./project_demo_lines.mp4). The code can be found in the last code cell, **but I think my combining method is too naive**.
 
+Here is one combined example:
+
+![alt text][image6]
 
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
 
@@ -144,6 +147,7 @@ The code for this part can be found in code `cell 30-last`.
 I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
 I define a `Detection` class to smooth several frames, here I choose 10 frames. Every time I find the heat map of 10 frames, it can be helpful to reject false positive in orderinf list of images. It can be found in the `process_each_frame function` of code 'cell 34'. 
+
 
 
 ---
