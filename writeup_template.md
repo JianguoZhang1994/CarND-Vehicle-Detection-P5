@@ -56,19 +56,27 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 ![alt text][image2]
 
-####2. Explain how you settled on your final choice of HOG parameters.
+#### 2. Explain how you settled on your final choice of HOG parameters.
 
 The code for this part can be found in code `cell 7-8`.
 
 I tried various combinations of parameters. The parameters I use shows as following:
 
- |feature vector length X_train:  6156 |Scaled_X_train:  6156 |
- |Color Space:  YCrCb |orient:  9 |
- |pixels per cell:  8 |cells per block:  2 |
- |hog_channel:  ALL |spatial_size:  (16, 16) |
- |hist_bins:  32 |ystart:  400 |
- |ystop:  656| number of frames: 10|
- |scale: 1.5|xy_overlap: (0.5, 0.5)|
+
+| Source        | Destination   | 
+|:-------------:|:-------------:| 
+| 200, img_size[1]      | 300, img_size[1]        | 
+| 1200, img_size[1]      | 960, img_size[1]      |
+| 700, 450     | 960, 0      |
+| 585, 450      | 300, 0        |
+
+ | feature vector length X_train:  6156 | Scaled_X_train:  6156 |
+ | Color Space:  YCrCb | orient:  9 |
+ | pixels per cell:  8 | cells per block:  2 |
+ | hog_channel:  ALL | spatial_size:  (16, 16) |
+ | hist_bins:  32 | ystart:  400 |
+ | ystop:  656| number of frames: 10|
+ | scale: 1.5| xy_overlap: (0.5, 0.5)|
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
