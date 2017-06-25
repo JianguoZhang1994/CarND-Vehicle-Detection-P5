@@ -134,7 +134,7 @@ Ultimately I searched using YCrCb 3-channel HOG features plus spatially binned c
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my video result](./project_video_result.mp4)
 
-I also try to combine vehicle detection and lane detection, here's a [link to my vehicle_lane_line detection](./project_demo_lines.mp4). The code can be found in the last code cell, **but I think my combining method is too naive**.
+I also try to combine vehicle detection and lane detection, here's a [link to my vehicle_lane_line detection](./project_demo_lines.mp4). I only deal with the output image of lane lines detection using vehicle detection `final_process_image function` in code `cell 66`. **but I think my combining method is too naive** since the lane lines image with lines drawing may affect the vehicle detecting result.
 
 Here is one combined example:
 
@@ -152,10 +152,10 @@ I define a `Detection` class to smooth several frames, here I choose 10 frames. 
 
 ---
 
-###Discussion
+### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-It is hard to detect strong false positive examples. I did not combine multiple scaling method, this may also make the pipline not so robust.
+It is hard to detect strong false positive examples. I did not combine multiple scaling method, this may also make the pipline not so robust. 
 
 In future, I will try some more advanced real-time method like  [Faster R-CNN](https://arxiv.org/pdf/1506.01497.pdf) in 2016 and the newest method [Mask R-CNN](https://arxiv.org/pdf/1703.06870.pdf) in 2017.
