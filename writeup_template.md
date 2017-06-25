@@ -65,7 +65,7 @@ I tried various combinations of parameters. The parameters I use shows as follow
 
 
 
-| Source        | Destination   | 
+|        |    | 
 |:-------------:|:-------------:| 
  | feature vector length X_train:  6156 | Scaled_X_train:  6156 |
  | Color Space:  YCrCb | orient:  9 |
