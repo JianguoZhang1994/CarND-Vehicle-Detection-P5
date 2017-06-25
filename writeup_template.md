@@ -63,8 +63,7 @@ The code for this part can be found in code `cell 7-8`.
 I tried various combinations of parameters. The parameters I use shows as following:
 
 
-| Source        | Destination   | 
-|:-------------:|:-------------:| 
+
 | 200, img_size[1]      | 300, img_size[1]        | 
 | 1200, img_size[1]      | 960, img_size[1]      |
 | 700, 450     | 960, 0      |
