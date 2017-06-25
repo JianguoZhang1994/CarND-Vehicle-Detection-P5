@@ -143,7 +143,7 @@ I define a `Detection` class to smooth several frames, here I choose 10 frames. 
 
 ###Discussion
 
-####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+#### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
 It is hard to detect strong false positive examples. I did not combine multiple scaling method, this may also make the pipline not so robust.
 
