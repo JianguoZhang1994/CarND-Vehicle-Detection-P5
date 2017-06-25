@@ -134,7 +134,7 @@ Ultimately I searched using YCrCb 3-channel HOG features plus spatially binned c
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 Here's a [link to my video result](./project_video_result.mp4)
 
-I also try to combine vehicle detection and lane detection, here's a [link to my vehicle_lane_line detection](./project_demo_lines.mp4). I only deal with the output image of lane lines detection using vehicle detection `final_process_image function` in code `cell 66`. **but I think my combining method is too naive** since the lane lines image with lines drawing may affect the vehicle detecting result.
+I also try to combine vehicle detection and lane detection, here's a [link to my vehicle_lane_line detection](./project_demo_lines.mp4). I only deal with the output image of lane lines detection using vehicle detection `final_process_image function` in code `cell 66`. **But I think my combining method is too naive** since the lane lines image with lines drawing may affect the vehicle detecting result.
 
 Here is one combined example:
 
